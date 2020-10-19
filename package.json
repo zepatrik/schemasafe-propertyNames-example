@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node ./run.js"
+  },
+  "dependencies": {
+    "@exodus/schemasafe": "^1.0.0-rc.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "definitions": {
+        "gocritic-checks": {
+            "enum": [
+                "appendAssign",
+                "argOrder"
+            ]
+        }
+    },
+    "properties": {
+        "linters-settings": {
+            "type": "object",
+            "properties": {
+                "gocritic": {
+                    "type": "object",
+                    "properties": {
+                        "settings": {
+                            "type": "object",
+                            "propertyNames": {
+                                "$ref": "#/definitions/gocritic-checks"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
