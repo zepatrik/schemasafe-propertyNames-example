@@ -3,10 +3,7 @@
     "type": "object",
     "definitions": {
         "keys": {
-            "enum": [
-                "foo",
-                "bar"
-            ]
+            "type": "string"
         }
     },
     "propertyNames": {
